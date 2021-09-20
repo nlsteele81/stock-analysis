@@ -6,10 +6,6 @@ For this challenge, the first deliverable consisted of refactoring the Module 2 
 ## Analysis
 Both the Module 2 solution code and VBA Challenge code provide the same results for each stock for 2017 and 2018, however, these results were obtained with markedly different run times. For example, the run time of the Module 2 All Stocks Analysis code for 2017 stocks data was 56.95 seconds (Image 1) compared to just 0.12 seconds (Image 2) using the refactored code as modified for the VBA Challenge. Similarly, the All Stocks Analysis of 2018 data was completed in 56.62 seconds using the Module 2 solution code (Image 3) versus 0.13 seconds using the VBA Challenge refactored code (Image 4). See the Resources folder within VBA Challenge for screenshots of the All Stocks Analysis code run times for the Module 2 solution code versus VBA Challenge code for 2017 and 2018 (as well as images referenced throughout the remainder of this document).
 
-##### Image 1
-![image](Resources/Image_1_Module_2_Solution_Code_Run_Time_for_All_Stocks_Analysis_of_2017.png)
-
-
 At a glance, the majority of stocks performed more favorably in 2017 compared to 2018 (Images 5 – 8). This is evident because with both the Module 2 solution code and the refactored code in VBA Challenge, Excel was instructed to color the cells with a return greater than zero in green and those with a return less than zero in red. Thus, the return was “green” or greater than zero for every stock except TERP in 2017 (Image 6) whereas in 2018 only ENPH and RUN performed favorably or with a return greater than zero (Image 8). With the exception of TERP (and the previously discussed ENPH and RUN), which performed negatively in both 2017 and 2018, the remaining stocks switched from earning positive returns in 2017 (Image 6) to negative returns for 2018 (Image 8).
 ## Code
 Both the Module 2 solution code and VBA Challenge refactored code begin with a declared subroutine as well as a variable for tracking the run time (Images 9 and 10). Both also activate the worksheet that will be used to display the data output for each analysis. While both solutions encode an InputBox that will be used to ask the user which year he or she wishes to analyze, the Module 2 solution code explicitly declares a string, “yearValue”, to hold this value whereas the refactored code in VBA Challenge does not (Images 11 and 12).
@@ -34,11 +30,68 @@ While both sets of code yielded the same results, the refactored code analyzed t
 
 After comparing the run times of the original and refactored code, it is clear that the refactored code performed more efficiently. The Module 2 solution code had the advantage of demonstrating the use of many techniques to complete the analysis while the VBA Challenge code was more streamlined and used its own set of new techniques for analysis and storing data. The only possible disadvantage of the refactored code is that a greater understanding of VBA would be required of someone unfamiliar with this analysis to understand the code and the various functions. The Module 2 solution code, while less efficient, was easier to follow as a novice code writer.
 
-
+##### Image 1
+![image](Resources/Image_1_Module_2_Solution_Code_Run_Time_for_All_Stocks_Analysis_of_2017.png)
 
 ##### Image 2
 ![](Resources/Image_2_VBA_Challenge_Run_Time_for_All_Stocks_Analysis_of_2017_Data.png)
-![]()
-![]()
-![]()
-![]()
+
+##### Image 3
+![](Resources/Image3Module2SolutionCodeRunTimeforAllStocksAnalysisof2018.png)
+
+##### Image4
+![](Resources/Image4VBAChallengeRunTimeforAllStocksAnalysisof2018Data.png)
+
+##### Image 5
+![](Resources/Image5Module2SolutionCode2017AllStocksAnalysisResults.png)
+
+##### Image 6
+![](Resources/Image6VBAChallengeCode2017AllStocksAnalysisResults.png)
+
+##### Image 7
+![](Resources/Image7Module2SolutionCode2018AllStocksAnalysisResults.png)
+
+##### Image 8
+![](Resources/Image8VBAChallengeCode2018AllStocksAnalysisResults.png)
+
+##### Image 9
+![](Resources/Image9Module2SolutionCodeStartTimetoTickerArray.png)
+
+##### Image 10
+![](Resources/Image10VBAChallengeStartTimetoTickerArray.png)
+
+##### Image 11
+![](Resources/Image11Module2SolutionCodeYearValue.png)
+
+##### Image 12
+![](Resources/Image12VBAChallengeYearValue.png)
+
+##### Image 13
+![](Resources/Image13Module2SolutionCodeDeclaredVariablesandRowCount.png)
+
+##### Image 14
+![](Resources/Image14VBAChallengeCodeWorksheetActivationandRowCount.png)
+
+##### Image 15
+![](Resources/Image15Module2SolutionCodeInitialLoop.png)
+
+##### Image 16
+![](Resources/Image16VBAChallengeTickerIndexInitializeOutputArraysNestedLoops.png)
+
+##### Image 17
+![](Resources/Image17Module2SolutionCodeNestedLoopandStartingPrice.png)
+
+##### Image 18
+![](Resources/Image18VBAChallengeCodeTickerIndexandOutputArrays.png)
+
+##### Image 19
+![](Resources/Image19Module2SolutionCodeEndingPriceOutputResultsFormatting.png)
+
+##### Image 20
+![](Resources/Image20VBAChallengeTickerEndPriceOutputArraysFormatting.png)
+
+##### Image 21
+![](Resources/Image21Module2SolutionCodeFormatting.png)
+
+##### Image 22
+![](Resources/Image22VBAChallengeCodeFormattingandEndTimer.png)
