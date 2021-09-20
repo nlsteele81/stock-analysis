@@ -30,6 +30,7 @@ While both sets of code yielded the same results, the refactored code analyzed t
 
 After comparing the run times of the original and refactored code, it is clear that the refactored code performed more efficiently. The Module 2 solution code had the advantage of demonstrating the use of many techniques to complete the analysis while the VBA Challenge code was more streamlined and used its own set of new techniques for analysis and storing data. The only possible disadvantage of the refactored code is that a greater understanding of VBA would be required of someone unfamiliar with this analysis to understand the code and the various functions. The Module 2 solution code, while less efficient, was easier to follow as a novice code writer.
 
+## Images
 ##### Image 1
 ![image](Resources/Image_1_Module_2_Solution_Code_Run_Time_for_All_Stocks_Analysis_of_2017.png)
 
